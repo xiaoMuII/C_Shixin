@@ -1,9 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
-
+#include <string.h>
 #ifndef qsort1_h
 #define qsort1_h
-
 int cmp(const void *a,const void *b)
 {
     return (*(int*)a-*(int*)b);

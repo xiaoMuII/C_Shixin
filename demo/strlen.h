@@ -1,19 +1,15 @@
-#ifndef strtlen_h
-#define strtlen_h
-//字符串形式
-//char site[10] ="shixin";
-//char site[10] ={'s','h','i','x','i','n','\0'};
+#ifndef _STRLEN_H
+#define _STRLEN_H
 
-// 自行判断字符串长度，关键：以‘\0’结尾 
 int strlen1(char *p)
 {
     int i=0;
-    //*(p+i) *p为第一位，依次加下去
-    for(i=0;*(p+i)!='\0';i++)
+    while(*p != 0)
     {
-        ;
+        p++;
+        i++;
     }
-    return  i;
+    return i;
 }
 
 #endif
